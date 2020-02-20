@@ -1,0 +1,28 @@
+name: public_sc
+dependencies:
+  # basic python stuff
+  - python=3.7
+  - pip=19.3
+  - pandas=0.24.2
+  - scikit-learn=0.22.1
+  - statsmodels=0.11.0
+  # jupyter stuff
+  - jupyter
+  - ipython=7.6.0
+  # pip packages
+  - pip:
+    # scanpy stuff
+    # anndata 0.7.1 has slow Anndata.concatenation() bug
+    # and possibly issues with paga_path
+    - anndata==0.6.22.post1
+    - scanpy==1.4.5.post2
+    - scrublet==0.2.1
+    - scipy==1.2.1
+    # jupyter/formatting stuff
+    - nbdime
+    - nbstripout
+    - blackcellmagic
+    # probably only needed for MacOS? Fixes a matplotlib issue on MacOS,
+    # but apparently leads to conda failures on linux, so un-hash the next
+    # line on MacOS only (untested on windows)
+    - wxPython
