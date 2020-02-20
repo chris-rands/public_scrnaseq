@@ -47,15 +47,20 @@ conda remove --name public_sc --all
 
 ## Tests
 
-You can run the entire notebook without changing anything to run the test data. If the output exactly matches my output, you should get a `results.h5ad` file with the following `md5`:
+You can restart the entire notebook without changing anything to run the test data and you should have the following output at the bottom of the notebook:
+```
+INFO:root:Total number of cells: 8966
+INFO:root:Total number of genes: 27664
+```
+
+The `results.h5ad` is ~63Mb and on macOS I got the following 'md5':
 ```
 0de24e608b3f4723f9127e4cdc87ee4d
 ```
 
-And the following output at the bottom of the notebook:
+And on unix using `md5sum`:
 ```
-INFO:root:Total number of cells: 8966
-INFO:root:Total number of genes: 27664
+9e9aa887a16816cbcdc0c5ef00e42447
 ```
 
 The `test_data/` is the CellRanger v3 `filtered_feature_bc_matrix/` from scRNA-seq data derived from adult mice testis [Ernst et al. 2019](https://www.nature.com/articles/s41467-019-09182-1)
