@@ -11,7 +11,8 @@ This output file contains the filtered and normalized matrix across batches.
 
 Clone this repo:
 ```
-git clone https://gitlab.unige.ch/nef_lab/public_scrnaseq
+git clone https://gitlab.unige.ch/nef_lab/public_scrnaseq;
+cd public_scrnaseq
 ```
 
 Install `miniconda` and then create and activate the conda environment:
