@@ -25,4 +25,4 @@ dependencies:
     # probably only needed for MacOS? Fixes a matplotlib issue on MacOS,
     # but apparently leads to conda failures on linux, so un-hash the next
     # line on MacOS only (untested on windows)
-    - wxPython
+    #- wxPython
