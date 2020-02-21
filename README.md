@@ -53,15 +53,7 @@ INFO:root:Total number of cells: 8966
 INFO:root:Total number of genes: 27664
 ```
 
-The `results.h5ad` is ~63Mb and on macOS I got the following 'md5':
-```
-0de24e608b3f4723f9127e4cdc87ee4d
-```
-
-And on unix using `md5sum`:
-```
-9e9aa887a16816cbcdc0c5ef00e42447
-```
+Note the exact `results.h5ad` and it's `md5` is not reproduced exactly, even on one platform, but the file is ~63Mb.
 
 The `test_data/` is the CellRanger v3 `filtered_feature_bc_matrix/` from scRNA-seq data derived from adult mice testis [Ernst et al. 2019](https://www.nature.com/articles/s41467-019-09182-1)
 
