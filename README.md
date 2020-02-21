@@ -1,11 +1,11 @@
 # public_sc
 
-This is a draft repo for the colloboration between Geneve and Rene to analyse single cell transriptomics data from mice and humans.
+This is a draft repo for the colloboration between Geneve and Rennes to analyse single cell transriptomics data from mice and humans.
 
 Note, the notebook only performs basic analyses- deliberiately, further downstream analyses are not performed here.
 
 The starting point here is the CellRanger filered/non-filtered matrix(s) and the end point is a `results.h5ad` file, which can be read by `scanpy` or `seurat`.
-This output file contains the filtered and normalized matrix across batches.
+This output file contains the filtered and normalized matrix across datasets without batch correction or any other processing.
 
 ## Usage
 
